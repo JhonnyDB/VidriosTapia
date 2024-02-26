@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidrios Tapia</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/templatemo-style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+
+<style>
+  .custom-card-img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 300px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el tamaño especificado sin distorsionarla */
+  }
+    .added-to-cart {
+        background-color: rgba(113, 146, 120, 0.745);
+        color: rgb(255, 255, 255)
+    }
+    .btn-primary,
+    .btn-danger {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-film mr-2"></i>
+                Vidrios Tapia
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="../index.html">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="../videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/hero.jpg">
+        <form class="d-flex tm-search-form">
+            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+
+    <br><br>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="../img/marqueteria/1.jfif" class="card-img-top custom-card-img" alt="Imagen de Marquetería">
+              <div class="card-body">
+                <h5 class="card-title">Doble marco con relieve (sin vidrio)</h5>
+                <br>
+                <p class="card-text">- Precio: bs. 90</p>
+                <p class="card-text">- Medidas: 65 x 80</p>
+                <p class="card-text">- Marco: 3/4 de grosor</p>
+                <p class="card-text">Descripción: Diseño único y acabado de alta calidad, añadirá un toque de distinción a cualquier espacio.</p>
+                <button class="btn btn-primary" onclick="changeIcon('cartIcon1')">
+                    <i id="cartIcon1" class="fas fa-shopping-cart"></i> ‎ ‎ ‎ ‎ Agregar al carrito
+                  </button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="../img/marqueteria/2.jfif" class="card-img-top custom-card-img" alt="Imagen de Marquetería">
+              <div class="card-body">
+                <h5 class="card-title">Marco sencillo con vidrio transparente</h5>
+                <br>
+                <p class="card-text">- Precio: bs. 25</p>
+                <p class="card-text">- Medidas: tamaño carta y oficio</p>
+                <p class="card-text">- Medidas: tamaño oficio</p>
+                <p class="card-text">Descripción: Diseño único de 3mm y acabado de alta calidad, con un toque de distincion .</p>
+                <button class="btn btn-primary" onclick="changeIcon('cartIcon2')">
+                    <i id="cartIcon2" class="fas fa-shopping-cart"></i> ‎ ‎ ‎ ‎ Agregar al carrito
+                  </button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="../img/marqueteria/3.jfif" class="card-img-top custom-card-img" alt="Imagen de Marquetería">
+              <div class="card-body">
+                <h5 class="card-title">Modelos de los Marcos</h5>
+                <br>
+                <p class="card-text">- Precio: ---</p>
+                <p class="card-text">- Medidas: ---</p>
+                <p class="card-text">- Marco: ---</p>
+                <p class="card-text">Descripción: Diseños variados para marcos a su preferencia y personalizada</p>
+                <button class="btn btn-primary" onclick="changeIcon('cartIcon3')">
+                    <i id="cartIcon3" class="fas fa-shopping-cart"></i> ‎ ‎ ‎ ‎ Agregar al carrito
+                  </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="../img/marqueteria/4.jfif" class="card-img-top custom-card-img" alt="Imagen de Marquetería">
+              <div class="card-body">
+                <h5 class="card-title">Diseños de los Marcos </h5>
+                <br>
+                <p class="card-text">- Precio: ---</p>
+                <p class="card-text">- Medidas: ---</p>
+                <p class="card-text">- Marco: ---</p>
+                <p class="card-text">Descripción: Tanto de 1 pulgadas, 3/4 y Marcos sencillos.</p>
+                <button class="btn btn-primary" onclick="changeIcon('cartIcon4')">
+                    <i id="cartIcon4" class="fas fa-shopping-cart"></i> ‎ ‎ ‎ ‎ Agregar al carrito
+                  </button>
+              </div>
+            </div>
+          </div><div class="col-md-4">
+            <div class="card mb-4">
+              <img src="../img/marqueteria/5.jfif" class="card-img-top custom-card-img" alt="Imagen de Marquetería">
+              <div class="card-body">
+                <h5 class="card-title">Marcos con Vidrio de 3mm transparente</h5>
+                <br>
+                <p class="card-text">- Precio: depende del tamaño de la fotografía 38bs</p>
+                <p class="card-text">- Medidas: Carta u oficio</p>
+                <p class="card-text">- Marco: 3/4 de grosor</p>
+                <p class="card-text">Descripción: El precio del marco es dependiendo del tamaño de la fotografía</p>
+                  <button class="btn btn-primary" onclick="changeIcon('cartIcon5')">
+                    <i id="cartIcon5" class="fas fa-shopping-cart"></i> ‎ ‎ ‎ ‎ Agregar al carrito
+                  </button>
+              </div>
+            </div>
+          </div><div class="col-md-4">
+            <div class="card mb-4">
+              <img src="../img/marqueteria/6.jfif" class="card-img-top custom-card-img" alt="Imagen de Marquetería">
+              <div class="card-body">
+                <h5 class="card-title">Marco con vidrio transparente</h5>
+                <br>
+                <p class="card-text">- Precio: bs. 50</p>
+                <p class="card-text">- Medidas: 1 pulgada </p>
+                <p class="card-text">- Marco: 3mm</p>
+                <p class="card-text">Descripción: Si la compra llega a ser tamaño carta u oficio es bs. 50.</p>
+                <button class="btn btn-primary" onclick="changeIcon('cartIcon6')">
+                    <i id="cartIcon6" class="fas fa-shopping-cart"></i> ‎ ‎ ‎ ‎ Agregar al carrito
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<br>
+
+        <div class="row tm-mb-90 tm-gallery">
+        
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="../img/PEDESTALES.jfif" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Pedestales</h2>
+                        <a href="../products/Pedestales.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">14 Oct 2020</span>
+                    <span>16,100 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="../img/SILICONAS.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Siliconas</h2>
+                        <a href="../products/Siliconas.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">12 Oct 2020</span>
+                    <span>12,460 views</span>
+                </div>
+            </div>    
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+              <figure class="effect-ming tm-video-item">
+                    <img src="../img/URNAS.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Urnas</h2>
+                        <a href="../products/Urnas.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">12 Oct 2020</span>
+                    <span>12,460 views</span>
+                </div>
+            </div>     
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="../img/VITRINAS.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Vitrinas</h2>
+                        <a href="../products/Vitrinas.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">12 Oct 2020</span>
+                    <span>12,460 views</span>
+                </div>
+            </div>     
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="../img/CORTADORAS.png" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Cortadoras</h2>
+                        <a href="../products/Cortadores.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">12 Oct 2020</span>
+                    <span>12,460 views</span>
+                </div>
+            </div>     
+        </div> <!-- row -->
+    </div> <!-- container-fluid, tm-container-content -->
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">VIDRIOS TAPIA</h3>
+                    <p>En la empresa <a rel="sponsored" href="https://laguia.bo/empresa/vidrios-tapia-villa-fatima">Vidrios Tapia</a> producimos y entregamos bienes y servicios de acuerdo con altos estándares internos y externos para garantizar la satisfacción de nuestros clientes.</p>
+                    <p>Nuestro compromiso es conducir nuestro negocio de manera honesta, sincera, comprometida, transparente y con enfoque a la satisfacción del cliente.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
+                    <ul class="tm-footer-links pl-0">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="../about.html">Our Company</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://www.facebook.com/profile.php?id=100054480789471&sfnsn=wa&mibextid=RUbZ1f"><i class="fab fa-facebook"></i></a></li>
+                        <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                    <a href="../about.html" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
+                    <a href="../about.html" class="tm-text-gray text-right d-block">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+    <script src="../js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+
+    function changeIcon(iconId) {
+    var cartIcon = document.getElementById(iconId);
+    if (cartIcon.classList.contains('fa-shopping-cart')) {
+      cartIcon.classList.remove('fa-shopping-cart');
+      cartIcon.classList.add('fa-check-circle');
+    } else {
+      cartIcon.classList.remove('fa-check-circle');
+      cartIcon.classList.add('fa-shopping-cart');
+    }
+  }
+    </script>
+</body>
+</html>
